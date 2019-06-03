@@ -84,4 +84,4 @@ def api_users():
 def api_all():
     return jsonify(books)
 
-app.run(host='0.0.0.0', debug=True, port=3134)
+app.run(port=5200)
