@@ -83,5 +83,7 @@ def api_users():
 @app.route('/pipeline', methods=['GET'])
 def api_all():
     return jsonify(books)
-
-app.run(port=5200)
+	
+	
+if __name__ == '__main__':
+	app.run(host="0.0.0.0",port=5200)
