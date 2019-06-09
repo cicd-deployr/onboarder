@@ -14,12 +14,11 @@ cd onboarder
 $ docker build --tag api_image .
 ```
 **Register and Login to Canister https://cloud.canister.io.**
-**Create a repository to save the created docker image**
+*Create a repository to save the created docker image*
 **_To push images you can use the command line. Start by logging in:_**
 ```
 docker login --username=username cloud.canister.io:5000
 ```
-Password will be asked to enter - enter your password
 **_Tag the image that you want to publish_**
 ```
 docker tag (your image id) cloud.canister.io:5000/username/onborder:v0.1
