@@ -1,12 +1,10 @@
-### H3 Python-Flask-Docker 
-##### H5 Develop a basic Python Flask app which prints the Users and Resources and Dockerize the image
+### Python-Flask-Docker 
+##### Develop a basic Python Flask app which prints the Users and Resources and Dockerize the image
 
 **_Build the Docker image manually by cloning the Git repo._**
 ```
 $ git clone https://github.com/cicd-deployr/onboarder.git.
-
 $ docker build --tag api_image .
-```https://github.com/cicd-deployr/onboarder.git
 ```
 **_Download precreated image_**
 _You can also just download the existing image from Canister_
