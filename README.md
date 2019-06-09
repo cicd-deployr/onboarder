@@ -13,18 +13,18 @@ cd onboarder
 ```
 $ docker build --tag api_image .
 ```
-**Register and Login to Canister https://cloud.canister.io**
+**Register and Login to Canister https://cloud.canister.io.**
 **Create a repository to save the created docker image**
-### To push images you can use the command line. Start by logging in:
+**_To push images you can use the command line. Start by logging in:_**
 ```
 docker login --username=username cloud.canister.io:5000
 ```
 Password will be asked to enter - enter your password
-**Now tag the image that we want to publish**
+**_Tag the image that you want to publish_**
 ```
 docker tag (your image id) cloud.canister.io:5000/username/onborder:v0.1
 ```
-**Now push the tag to the repository**
+**_Push the tag to the repository_**
 ```
 docker push cloud.canister.io:5000/username/onboarder
 ```
@@ -40,6 +40,5 @@ $ docker run --name (container name) -d -p 5200:5200 (image name)
 **_Verify the running container Verify by checking the container ip and hostname (ID):_**
 ```
 $ docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' (container name)
-
 $ docker inspect -f '{{ .Config.Hostname }}' (container name)
 ```
