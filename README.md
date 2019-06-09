@@ -13,8 +13,9 @@ cd onboarder
 ```
 $ docker build --tag api_image .
 ```
+**Register and Login to Canister https://cloud.canister.io**
+**Create a repository to save the created docker image**
 ### To push images you can use the command line. Start by logging in:
-**Login to Canister https://cloud.canister.io and create a repository**
 ```
 docker login --username=username cloud.canister.io:5000
 ```
