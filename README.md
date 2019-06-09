@@ -6,7 +6,14 @@
 $ git clone https://github.com/cicd-deployr/onboarder.git.
 
 $ docker build --tag api_image .
+```https://github.com/cicd-deployr/onboarder.git
 ```
+**_Download precreated image_**
+_You can also just download the existing image from Canister_
+```
+docker pull cloud.canister.io:5000/vbr100/onboarder
+```
+
 **_Run the container Create a container from the image._**
 ```
 $ docker run --name my-container -d -p 5200:5200 api_image.
